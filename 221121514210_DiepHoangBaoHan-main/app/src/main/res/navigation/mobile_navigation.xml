@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_day1_layout">
+
+    <fragment
+        android:id="@+id/nav_day1_layout"
+        android:name="due.giuaky221121514210.ui.Day1_Layout.LayoutFragment"
+        android:label="Layout"
+        tools:layout="@layout/fragment_day1_layout" />
+
+    <fragment
+        android:id="@+id/nav_day1_linearlayout"
+        android:name="due.giuaky221121514210.ui.Day1_LinearLayout.LinearLayoutFragment"
+        android:label="Linear Layout"
+        tools:layout="@layout/fragment_day1_linearlayout" />
+
+    <fragment
+        android:id="@+id/nav_day2_activity_login"
+        android:name="due.giuaky221121514210.ui.Day2_Activity.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_day2_ac_login" >
+        <action
+            android:id="@+id/action_nav_day2_activity_login_to_nav_day2_activity_profile"
+            app:destination="@id/nav_day2_activity_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_day2_activity_profile"
+        android:name="due.giuaky221121514210.ui.Day2_Activity.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_day2_ac_profile" >
+        <action
+            android:id="@+id/action_nav_day2_activity_profile_to_nav_day2_activity_edituser"
+            app:destination="@id/nav_day2_activity_edituser" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_day2_activity_edituser"
+        android:name="due.giuaky221121514210.ui.Day2_Activity.EditUserFragment"
+        android:label="Edit User"
+        tools:layout="@layout/fragment_day2_ac_edit_user" />
+    <fragment
+        android:id="@+id/nav_day2_advanced"
+        android:name="due.giuaky221121514210.ui.Day2_Listview.Advanced.AdvancedFragment"
+        android:label="Advanced"
+        tools:layout="@layout/fragment_day2_listview_advanced" />
+    <fragment
+        android:id="@+id/nav_day2_listview"
+        android:name="due.giuaky221121514210.ui.Day2_Listview.ListViews.ListViewFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_day2_listview" />
+    <fragment
+        android:id="@+id/nav_day3_basic"
+        android:name="due.giuaky221121514210.ui.Day3_Network.BasicFragment"
+        android:label="Basic"
+        tools:layout="@layout/fragment_day3_basic" />
+    <fragment
+        android:id="@+id/nav_day3_listnews"
+        android:name="due.giuaky221121514210.ui.Day3_Network.ListNewsFragment"
+        android:label="List News"
+        tools:layout="@layout/fragment_day3_list_news" />
+
+    <fragment
+        android:id="@+id/nav_day3_weather"
+        android:name="due.giuaky221121514210.ui.Day3_Network.WeatherFragment"
+        android:label="Weather"
+        tools:layout="@layout/fragment_day3_weather" />
+
+</navigation>
