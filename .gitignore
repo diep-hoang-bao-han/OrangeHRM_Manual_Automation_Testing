@@ -1,0 +1,17 @@
+# IDE
+.idea/
+.settings/
+.classpath
+.project
+*.iml
+
+# Build
+target/
+*.class
+
+# Logs
+*.log
+
+# Sensitive files
+.env
+.env.*
